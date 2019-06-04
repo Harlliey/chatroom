@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SocketDemo-1.iml" filepath="$PROJECT_DIR$/.idea/modules/SocketDemo-1.iml" group="SocketDemo-1" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SocketDemo-1_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SocketDemo-1_main.iml" group="SocketDemo-1" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SocketDemo-1_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SocketDemo-1_test.iml" group="SocketDemo-1" />
+    </modules>
+  </component>
+</project>
