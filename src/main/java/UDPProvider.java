@@ -53,13 +53,14 @@ public class UDPProvider {
                                 responsePort);
 
                         ds.send(responsePacket);
-                        System.out.println("UDP Provider finished!");
                     }
                 }
             } catch (Exception ignored) {
             } finally {
                 exit();
             }
+
+            System.out.println("UDP Provider finished!");
         }
 
         public void stop() {
