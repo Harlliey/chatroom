@@ -1,3 +1,5 @@
+package demo;
+
 public class Device {
     String ipAddr;
     int port;
@@ -11,7 +13,7 @@ public class Device {
 
     @Override
     public String toString() {
-        return "Device{" +
+        return "demo.Device{" +
                 "ipAddr='" + ipAddr + '\'' +
                 ", port=" + port +
                 ", sn='" + sn + '\'' +

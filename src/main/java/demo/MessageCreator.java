@@ -1,3 +1,5 @@
+package demo;
+
 import java.util.UUID;
 
 public class MessageCreator {

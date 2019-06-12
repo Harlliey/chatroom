@@ -1,3 +1,5 @@
+package demo;
+
 import java.io.IOException;
 import java.net.*;
 import java.util.ArrayList;
@@ -17,7 +19,7 @@ public class UDPSearcher {
             List<Device> deviceList = providerListener.getDevicesAndExit();
 
             for (Device device : deviceList) {
-                System.out.println("Device: " + device.toString());
+                System.out.println("demo.Device: " + device.toString());
             }
 
         System.out.println("UDP Searcher finished!");
