@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="780eef64-424a-4cf0-b628-1aa113e03149" name="Default" comment="增加tcpandudp包，实现udp辅助搜索tcp端口">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tcpandudp/client/TCPClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tcpandudp/server/TCPServer.java" afterDir="false" />
+    <list default="true" id="780eef64-424a-4cf0-b628-1aa113e03149" name="Default" comment="实现点对点数据传输">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tcpandudp/server/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tcpandudp/utils/CloseUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ClientDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/ClientDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MessageCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/MessageCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ServerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/ServerDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UDPProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/UDPProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UDPSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/UDPSearcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tcpandudp/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcpandudp/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tcpandudp/client/ClientSearcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcpandudp/client/ClientSearcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcpandudp/client/TCPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcpandudp/client/TCPClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tcpandudp/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcpandudp/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tcpandudp/server/TCPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tcpandudp/server/TCPServer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -42,11 +35,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/server/TCPServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="94" column="35" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
+            <state relative-caret-position="562">
+              <caret line="80" column="48" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/server/ClientHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-177">
+              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="class#ClientSendHandler#0;class#ClientHandler#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/server/Server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,23 +81,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/client/TCPClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+            <state relative-caret-position="1179">
+              <caret line="80" column="45" lean-forward="true" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1561#1562#0" expanded="true" />
+                <element signature="e#1615#1616#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/server/Server.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -112,11 +123,13 @@
         <option value="$PROJECT_DIR$/src/main/java/tcpandudp/client/ServerInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/tcpandudp/server/ServerProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/tcpandudp/client/ClientSearcher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tcpandudp/server/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/demo/ClientDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/tcpandudp/client/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tcpandudp/client/TCPClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tcpandudp/utils/CloseUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tcpandudp/server/ClientHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/tcpandudp/server/TCPServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tcpandudp/server/Server.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tcpandudp/client/TCPClient.java" />
       </list>
     </option>
   </component>
@@ -188,6 +201,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tcpandudp" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocketDemo-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tcpandudp" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -376,7 +398,7 @@
       <workItem from="1560005524545" duration="8183000" />
       <workItem from="1560125473248" duration="131000" />
       <workItem from="1560233467515" duration="8411000" />
-      <workItem from="1560250595882" duration="2803000" />
+      <workItem from="1560250595882" duration="9417000" />
     </task>
     <task id="LOCAL-00001" summary="完整的UDP局域网搜索练习">
       <created>1559655973157</created>
@@ -392,11 +414,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560239195193</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="实现点对点数据传输">
+      <created>1560323510807</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560323510807</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36395000" />
+    <option name="totallyTimeSpent" value="43009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -444,7 +473,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完整的UDP局域网搜索练习" />
     <MESSAGE value="增加tcpandudp包，实现udp辅助搜索tcp端口" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加tcpandudp包，实现udp辅助搜索tcp端口" />
+    <MESSAGE value="实现点对点数据传输" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现点对点数据传输" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -579,6 +609,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/utils/CloseUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/client/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -588,15 +628,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/client/TCPClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+        <state relative-caret-position="456">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -605,10 +638,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/server/TCPServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="94" column="35" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
+        <state relative-caret-position="562">
+          <caret line="80" column="48" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/server/ClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-177">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#ClientSendHandler#0;class#ClientHandler#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/client/TCPClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1179">
+          <caret line="80" column="45" lean-forward="true" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1561#1562#0" expanded="true" />
+            <element signature="e#1615#1616#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,5 +1,7 @@
 package tcpandudp.client;
 
+import tcpandudp.utils.CloseUtil;
+
 import java.io.*;
 import java.net.*;
 
@@ -15,7 +17,12 @@ public class TCPClient {
         System.out.println("Server info: (ip: " + socket.getInetAddress() + " port: " + socket.getPort() + ")");
 
         try {
-            sendMsg(socket);
+            ReadHandler readHandler = new ReadHandler(socket.getInputStream());
+            new Thread(readHandler).start();
+
+            write(socket);
+
+            readHandler.exit();
         } catch (Exception e) {
             System.out.println("Link with server error!");
         }
@@ -24,26 +31,64 @@ public class TCPClient {
         System.out.println("Connection closed!");
     }
 
-    private static void sendMsg(Socket client) throws IOException {
+    private static void write(Socket client) throws IOException {
         BufferedReader keyInputReader = new BufferedReader(new InputStreamReader(System.in));
         PrintStream output = new PrintStream(client.getOutputStream());
-        BufferedReader input = new BufferedReader(new InputStreamReader(client.getInputStream()));
 
-        boolean flag = true;
         do {
             String str = keyInputReader.readLine();
             output.println(str);
 
-            String echo = input.readLine();
-            if ("bye".equalsIgnoreCase(echo)) {
-                flag = false;
-            } else {
-                System.out.println(echo);
+            if ("byebye".equalsIgnoreCase(str)) {
+                break;
             }
-        } while (flag);
+        } while (true);
 
         keyInputReader.close();
-        input.close();
         output.close();
+    }
+
+    static class ReadHandler implements Runnable {
+        private boolean flag = false;
+        private final InputStream inputStream;
+
+        ReadHandler(InputStream inputStream) {
+            this.inputStream = inputStream;
+        }
+
+        @Override
+        public void run() {
+            try {
+                BufferedReader socketInput = new BufferedReader(new InputStreamReader(inputStream));
+
+                do {
+                    String str;
+                    try {
+                        str = socketInput.readLine();
+                    } catch (SocketTimeoutException e) {
+                        continue;
+                    }
+
+                    if (str == null) {
+                        System.out.println("Client cannot read the data!");
+                        throw new Exception();
+                    }
+
+                    System.out.println(str);
+                } while (!flag);
+            } catch (Exception e) {
+                if (!flag) {
+                    System.out.println("Connection missed!");
+
+                }
+            } finally {
+                CloseUtil.close(inputStream);
+            }
+        }
+
+        void exit() {
+            flag = true;
+            CloseUtil.close(inputStream);
+        }
     }
 }

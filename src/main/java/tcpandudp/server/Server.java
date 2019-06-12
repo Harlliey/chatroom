@@ -2,8 +2,12 @@ package tcpandudp.server;
 
 import tcpandudp.constants.TCPConstants;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Server {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         TCPServer tcpServer = new TCPServer(TCPConstants.SERVER_PORT);
         boolean isSuccess = tcpServer.start();
         if (!isSuccess) {
@@ -12,11 +16,13 @@ public class Server {
         }
 
         ServerProvider.start(TCPConstants.SERVER_PORT);
-        try {
-            System.in.read();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        String str;
+        do {
+            str = bufferedReader.readLine();
+            tcpServer.broadcast(str);
+        } while (!"byebye".equalsIgnoreCase(str));
 
         tcpServer.stop();
         ServerProvider.stop();

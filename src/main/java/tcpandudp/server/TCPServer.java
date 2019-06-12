@@ -1,18 +1,24 @@
 package tcpandudp.server;
 
+import com.sun.jmx.remote.internal.ClientListenerInfo;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TCPServer {
     private int tcpPort;
     private TCPListener tcpListener;
+    private List<ClientHandler> clientHandlerList;
 
-    public TCPServer(int tcpPort) {
+    TCPServer(int tcpPort) {
         this.tcpPort = tcpPort;
+        clientHandlerList = new ArrayList<>();
     }
 
     boolean start() {
@@ -32,9 +38,21 @@ public class TCPServer {
             tcpListener.exit();
             tcpListener = null;
         }
+
+        for (ClientHandler handler : clientHandlerList) {
+            handler.exit();
+        }
+
+        clientHandlerList.clear();
     }
 
-    private static class TCPListener implements Runnable{
+    void broadcast(String str) {
+        for (ClientHandler handler : clientHandlerList) {
+            handler.send(str);
+        }
+    }
+
+    private class TCPListener implements Runnable{
         private ServerSocket serverSocket;
         private boolean flag = false;
 
@@ -56,8 +74,15 @@ public class TCPServer {
                 } catch (IOException e) {
                     continue;
                 }
-                ClientHandler clientHandler = new ClientHandler(client);
-                new Thread(clientHandler).start();
+                ClientHandler clientHandler = null;
+                try {
+                    clientHandler = new ClientHandler(client, clientHandler1 -> clientHandlerList.remove(clientHandler1));
+                    clientHandlerList.add(clientHandler);
+                    clientHandler.readToPrint();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    System.out.println("Client connection error: " + e.getMessage());
+                }
             } while (!flag);
         }
 
@@ -67,47 +92,6 @@ public class TCPServer {
                 serverSocket.close();
             } catch (IOException e) {
                 e.printStackTrace();
-            }
-        }
-    }
-
-    private static class ClientHandler implements Runnable{
-        private Socket client;
-        private boolean flag = false;
-
-        public ClientHandler(Socket client) {
-            this.client = client;
-        }
-
-        @Override
-        public void run() {
-            System.out.println("New client connection: " + client.getInetAddress() + " port: " + client.getPort());
-            try {
-                PrintStream socketOutput = new PrintStream(client.getOutputStream());
-                BufferedReader socketInput = new BufferedReader(new InputStreamReader(client.getInputStream()));
-
-                do {
-                    String str = socketInput.readLine();
-                    if ("bye".equalsIgnoreCase(str)) {
-                        flag = true;
-                        System.out.println(str);
-                        socketOutput.println("bye");
-                    } else {
-                        System.out.println(str);
-                        socketOutput.println("response: " + str.length());
-                    }
-                } while (!flag);
-
-                socketInput.close();
-                socketOutput.close();
-            } catch (IOException e) {
-                System.out.println("Connection error!");
-            } finally {
-                try {
-                    client.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
             }
         }
     }
