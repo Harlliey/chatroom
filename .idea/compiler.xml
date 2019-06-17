@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="chatroom_main" target="1.8" />
+      <module name="chatroom_test" target="1.8" />
       <module name="SocketDemo-1_main" target="1.8" />
       <module name="SocketDemo-1_test" target="1.8" />
     </bytecodeTargetLevel>

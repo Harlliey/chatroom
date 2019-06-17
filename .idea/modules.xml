@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SocketDemo-1.iml" filepath="$PROJECT_DIR$/.idea/modules/SocketDemo-1.iml" group="SocketDemo-1" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SocketDemo-1_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SocketDemo-1_main.iml" group="SocketDemo-1" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SocketDemo-1_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SocketDemo-1_test.iml" group="SocketDemo-1" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chatroom.iml" filepath="$PROJECT_DIR$/.idea/modules/chatroom.iml" group="SocketDemo-1/chatroom" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chatroom/chatroom_main.iml" filepath="$PROJECT_DIR$/.idea/modules/chatroom/chatroom_main.iml" group="SocketDemo-1/chatroom" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chatroom/chatroom_test.iml" filepath="$PROJECT_DIR$/.idea/modules/chatroom/chatroom_test.iml" group="SocketDemo-1/chatroom" />
     </modules>
   </component>
 </project>

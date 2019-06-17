@@ -1,2 +1,3 @@
 rootProject.name = 'SocketDemo-1'
+include 'chatroom'
 
