@@ -4,6 +4,14 @@
     <bytecodeTargetLevel>
       <module name="chatroom_main" target="1.8" />
       <module name="chatroom_test" target="1.8" />
+      <module name="net.socket.demo-chatroom_main" target="1.8" />
+      <module name="net.socket.demo-chatroom_test" target="1.8" />
+      <module name="net.socket.demo-SocketDemo-1_main" target="1.8" />
+      <module name="net.socket.demo-SocketDemo-1_test" target="1.8" />
+      <module name="nio-chatroom.main" target="1.8" />
+      <module name="nio-chatroom.test" target="1.8" />
+      <module name="nio-chatroom_main" target="1.8" />
+      <module name="nio-chatroom_test" target="1.8" />
       <module name="SocketDemo-1_main" target="1.8" />
       <module name="SocketDemo-1_test" target="1.8" />
     </bytecodeTargetLevel>

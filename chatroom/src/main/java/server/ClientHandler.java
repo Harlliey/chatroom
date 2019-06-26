@@ -72,7 +72,6 @@ class ClientHandler {
                         ClientHandler.this.selfExit();
                         break;
                     }
-                    System.out.println(str);
                     clientHandlerCallBack.onNewMessageReceived(ClientHandler.this, str);
                 } while (!flag);
 

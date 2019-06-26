@@ -100,10 +100,12 @@ public class TCPServer implements ClientHandler.ClientHandlerCallback{
                 ClientHandler clientHandler = null;
                 try {
                     clientHandler = new ClientHandler(client, TCPServer.this);
+
+                    clientHandler.readToPrint();
+
                     synchronized (TCPServer.this) {
                         clientHandlerList.add(clientHandler);
                     }
-                    clientHandler.readToPrint();
                 } catch (IOException e) {
                     e.printStackTrace();
                     System.out.println("Client connection error: " + e.getMessage());

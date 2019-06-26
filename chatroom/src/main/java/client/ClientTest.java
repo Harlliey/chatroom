@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ClientTest {
-    private static boolean done;
+    private static boolean done = false;
 
     public static void main(String[] args) throws IOException {
         ServerInfo serverInfo = ClientSearcher.searchAndGetServer(10000);

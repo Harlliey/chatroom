@@ -1,31 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="780eef64-424a-4cf0-b628-1aa113e03149" name="Default" comment="实现收发数据并行">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/chatroom.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/chatroom/chatroom_main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/chatroom/chatroom_test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatroom/src/main/java/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatroom/src/main/java/client/ClientSearcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatroom/src/main/java/client/ClientTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatroom/src/main/java/client/ServerInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatroom/src/main/java/client/TCPClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatroom/src/main/java/constants/TCPConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatroom/src/main/java/constants/UDPConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatroom/src/main/java/server/ClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatroom/src/main/java/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatroom/src/main/java/server/ServerProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatroom/src/main/java/server/TCPServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatroom/src/main/java/utils/ByteUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatroom/src/main/java/utils/CloseUtil.java" afterDir="false" />
+    <list default="true" id="780eef64-424a-4cf0-b628-1aa113e03149" name="Default" comment="使用NIO改造聊天室">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/chatroom/net.socket.demo-chatroom_main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/chatroom/net.socket.demo-chatroom_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/net.socket.demo-SocketDemo-1_main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/net.socket.demo-SocketDemo-1_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/nio-chatroom.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/nio-chatroom.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/nio-chatroom.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/nio-chatroom/nio-chatroom_main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/nio-chatroom/nio-chatroom_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nio-chatroom/src/main/java/core/Connect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nio-chatroom/src/main/java/core/IoArgs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nio-chatroom/src/main/java/core/IoContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nio-chatroom/src/main/java/core/IoProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nio-chatroom/src/main/java/core/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nio-chatroom/src/main/java/core/Sender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nio-chatroom/src/main/java/impl/IoSelectorProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nio-chatroom/src/main/java/impl/SocketChannelAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nio-chatroom/src/main/java/utils/ByteUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nio-chatroom/src/main/java/utils/CloseUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/SocketDemo-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/SocketDemo-1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/SocketDemo-1_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/SocketDemo-1_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/SocketDemo-1_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/SocketDemo-1_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/chatroom.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/chatroom.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatroom/src/main/java/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/chatroom/src/main/java/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatroom/src/main/java/client/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/chatroom/src/main/java/client/ClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatroom/src/main/java/client/TCPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/chatroom/src/main/java/client/TCPClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatroom/src/main/java/server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/chatroom/src/main/java/server/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatroom/src/main/java/server/TCPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/chatroom/src/main/java/server/TCPServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,6 +40,9 @@
     <ignored path="$PROJECT_DIR$/chatroom/.gradle/" />
     <ignored path="$PROJECT_DIR$/chatroom/build/" />
     <ignored path="$PROJECT_DIR$/chatroom/out/" />
+    <ignored path="$PROJECT_DIR$/nio-chatroom/.gradle/" />
+    <ignored path="$PROJECT_DIR$/nio-chatroom/build/" />
+    <ignored path="$PROJECT_DIR$/nio-chatroom/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +56,9 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/nio-chatroom">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
@@ -58,48 +70,42 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatroom/src/main/java/server/Server.java">
+        <entry file="file://$PROJECT_DIR$/nio-chatroom/src/main/java/impl/IoSelectorProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="-894">
+              <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatroom/src/main/java/client/TCPClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1501">
-              <caret line="81" column="32" lean-forward="true" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#714#715#0" expanded="true" />
-                <element signature="e#740#741#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatroom/src/main/java/client/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="10" selection-start-line="10" selection-end-line="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3742#3810#0" expanded="true" />
+                <element signature="e#5513#5581#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/chatroom/src/main/java/client/ClientTest.java">
+        <entry file="file://$PROJECT_DIR$/nio-chatroom/src/main/java/core/IoContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="32" />
+            <state relative-caret-position="228">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#241#242#0" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
+                <element signature="e#326#327#0" expanded="true" />
+                <element signature="e#359#360#0" expanded="true" />
+                <element signature="e#476#477#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nio-chatroom/src/main/java/impl/SocketChannelAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1539">
+              <caret line="83" column="73" selection-start-line="83" selection-start-column="73" selection-end-line="83" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,9 +118,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>newFixedThreadPool</find>
+      <find>default</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -145,12 +158,20 @@
         <option value="$PROJECT_DIR$/chatroom/src/main/java/utils/CloseUtil.java" />
         <option value="$PROJECT_DIR$/chatroom/src/main/java/server/Server.java" />
         <option value="$PROJECT_DIR$/chatroom/src/main/java/server/ServerProvider.java" />
+        <option value="$PROJECT_DIR$/chatroom/src/main/java/client/ClientSearcher.java" />
+        <option value="$PROJECT_DIR$/chatroom/src/main/java/client/Client.java" />
         <option value="$PROJECT_DIR$/chatroom/src/main/java/server/ClientHandler.java" />
         <option value="$PROJECT_DIR$/chatroom/src/main/java/server/TCPServer.java" />
-        <option value="$PROJECT_DIR$/chatroom/src/main/java/client/ClientSearcher.java" />
-        <option value="$PROJECT_DIR$/chatroom/src/main/java/client/TCPClient.java" />
-        <option value="$PROJECT_DIR$/chatroom/src/main/java/client/Client.java" />
         <option value="$PROJECT_DIR$/chatroom/src/main/java/client/ClientTest.java" />
+        <option value="$PROJECT_DIR$/chatroom/src/main/java/client/TCPClient.java" />
+        <option value="$PROJECT_DIR$/nio-chatroom/src/main/java/core/IoContext.java" />
+        <option value="$PROJECT_DIR$/nio-chatroom/src/main/java/core/Receiver.java" />
+        <option value="$PROJECT_DIR$/nio-chatroom/src/main/java/core/Sender.java" />
+        <option value="$PROJECT_DIR$/nio-chatroom/src/main/java/core/Connect.java" />
+        <option value="$PROJECT_DIR$/nio-chatroom/src/main/java/core/IoArgs.java" />
+        <option value="$PROJECT_DIR$/nio-chatroom/src/main/java/core/IoProvider.java" />
+        <option value="$PROJECT_DIR$/nio-chatroom/src/main/java/impl/SocketChannelAdapter.java" />
+        <option value="$PROJECT_DIR$/nio-chatroom/src/main/java/impl/IoSelectorProvider.java" />
       </list>
     </option>
   </component>
@@ -174,37 +195,48 @@
             <path>
               <item name="SocketDemo-1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="chatroom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SocketDemo-1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="chatroom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocketDemo-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="nio-chatroom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocketDemo-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="nio-chatroom" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SocketDemo-1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="chatroom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="nio-chatroom" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SocketDemo-1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="chatroom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="nio-chatroom" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SocketDemo-1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Code" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="chatroom" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="nio-chatroom" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -233,7 +265,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/chatroom/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/nio-chatroom/src/main/java" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -244,8 +276,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/nio-chatroom/src/main/java" />
       <recent name="$PROJECT_DIR$/chatroom/src/main/java" />
       <recent name="$PROJECT_DIR$/src/CharRoom" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="core" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -260,9 +296,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Server">
+  <component name="RunManager" selected="Application.ClientTest">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client.ClientTest" />
+      <module name="chatroom_main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -410,6 +460,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClientTest" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Application.demo" />
         <item itemvalue="Application.UDPProvider" />
@@ -433,7 +484,12 @@
       <workItem from="1560125473248" duration="131000" />
       <workItem from="1560233467515" duration="8411000" />
       <workItem from="1560250595882" duration="9772000" />
-      <workItem from="1560746374638" duration="7760000" />
+      <workItem from="1560746374638" duration="14905000" />
+      <workItem from="1560957822093" duration="286000" />
+      <workItem from="1561098825995" duration="3979000" />
+      <workItem from="1561182184168" duration="2451000" />
+      <workItem from="1561191861452" duration="2544000" />
+      <workItem from="1561531451825" duration="3333000" />
     </task>
     <task id="LOCAL-00001" summary="完整的UDP局域网搜索练习">
       <created>1559655973157</created>
@@ -463,17 +519,24 @@
       <option name="project" value="LOCAL" />
       <updated>1560347782324</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="实现简易聊天室并编写压测用例">
+      <created>1560777844714</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560777844716</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51124000" />
+    <option name="totallyTimeSpent" value="70862000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19527897" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20958512" />
       <window_info id="Structure" order="1" weight="0.24964234" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -483,7 +546,7 @@
       <window_info id="Nl-Palette" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2759036" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2819277" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -491,8 +554,8 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32891566" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Build" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32891566" />
+      <window_info anchor="bottom" id="Build" order="11" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -517,100 +580,15 @@
     <MESSAGE value="增加tcpandudp包，实现udp辅助搜索tcp端口" />
     <MESSAGE value="实现点对点数据传输" />
     <MESSAGE value="实现收发数据并行" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现收发数据并行" />
+    <MESSAGE value="实现简易聊天室并编写压测用例" />
+    <MESSAGE value="使用NIO改造聊天室" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用NIO改造聊天室" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/net/DatagramPacket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="98" column="11" selection-start-line="98" selection-start-column="11" selection-end-line="98" selection-end-column="11" />
-          <folding>
-            <element signature="e#2362#2363#0" expanded="true" />
-            <element signature="e#2399#2400#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/nio/ByteBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="368" column="29" selection-start-line="368" selection-start-column="29" selection-end-line="368" selection-end-column="29" />
-          <folding>
-            <element signature="e#12369#12370#0" expanded="true" />
-            <element signature="e#12420#12421#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/utils/ByteUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/client/ServerInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="62" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/constants/UDPConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/constants/TCPConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/server/ServerProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="74" column="47" selection-start-line="74" selection-start-column="47" selection-end-line="74" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/UDPSearcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/UDPProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/demo/MessageCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/demo/Device.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -662,16 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/client/TCPClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1501">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -710,13 +678,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ChatRoom/constants/TCPConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ChatRoom/constants/TCPConstants.java" />
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -765,54 +727,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chatroom/build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/chatroom/src/main/java/client/ClientSearcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1479">
           <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chatroom/src/main/java/server/TCPServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1621#1622#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chatroom/src/main/java/server/ClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="112" column="23" selection-start-line="112" selection-start-column="23" selection-end-line="112" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1022#1023#0" expanded="true" />
-            <element signature="e#1071#1072#0" expanded="true" />
-            <element signature="e#1114#1115#0" expanded="true" />
-            <element signature="e#1140#1141#0" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chatroom/src/main/java/client/TCPClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1501">
-          <caret line="81" column="32" lean-forward="true" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -827,22 +747,236 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chatroom/src/main/java/client/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tcpandudp/client/TCPClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="10" selection-start-line="10" selection-end-line="11" />
+        <state relative-caret-position="171">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chatroom/src/main/java/client/ClientTest.java">
+    <entry file="file://$PROJECT_DIR$/chatroom/src/main/java/client/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="32" />
+        <state relative-caret-position="401">
+          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatroom/out/production/classes/client/Client.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#1307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="698" column="29" selection-start-line="698" selection-start-column="29" selection-end-line="698" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatroom/out/production/classes/client/ClientTest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatroom/src/main/java/server/TCPServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1197">
+          <caret line="71" column="37" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1572#1573#0" expanded="true" />
+            <element signature="e#1621#1622#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatroom/src/main/java/server/ClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2014">
+          <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1284#1285#0" expanded="true" />
+            <element signature="e#1327#1328#0" expanded="true" />
+            <element signature="e#1353#1354#0" expanded="true" />
+            <element signature="e#1406#1407#0" expanded="true" />
+            <element signature="e#1862#1863#0" expanded="true" />
+            <element signature="e#1916#1917#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatroom/src/main/java/client/TCPClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1349">
+          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatroom/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatroom/src/main/java/client/ClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-395">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nio-chatroom/gradlew.bat" />
+    <entry file="file://$PROJECT_DIR$/nio-chatroom/settings.gradle" />
+    <entry file="file://$PROJECT_DIR$/nio-chatroom/src/main/java/impl.java" />
+    <entry file="file://$PROJECT_DIR$/nio-chatroom/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nio-chatroom/src/main/java/core/Connect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="69" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nio-chatroom/src/main/java/core/Receiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nio-chatroom/src/main/java/core/IoArgs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nio-chatroom/src/main/java/utils/CloseUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nio-chatroom/src/main/java/utils/ByteUtils.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="57" column="28" lean-forward="true" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/concurrent/Executors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="620" column="5" selection-start-line="595" selection-start-column="63" selection-end-line="620" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nio-chatroom/src/main/java/core/IoProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nio-chatroom/src/main/java/core/Sender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/nio/channels/Selector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3742">
+          <caret line="371" lean-forward="true" selection-start-line="371" selection-end-line="371" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nio-chatroom/src/main/java/impl/SocketChannelAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="83" column="73" selection-start-line="83" selection-start-column="73" selection-end-line="83" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nio-chatroom/src/main/java/impl/IoSelectorProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-894">
+          <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3742#3810#0" expanded="true" />
+            <element signature="e#5513#5581#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nio-chatroom/src/main/java/core/IoContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -897,7 +1031,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>chatroom|chatroom|SocketDemo-1</last-edited>
+          <last-edited>nio-chatroom.main</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

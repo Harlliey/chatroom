@@ -78,7 +78,7 @@ public class TCPClient {
                         throw new Exception();
                     }
 
-                    System.out.println(str);
+//                    System.out.println(str);
                 } while (!flag);
             } catch (Exception e) {
                 if (!flag) {

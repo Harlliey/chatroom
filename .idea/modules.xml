@@ -8,6 +8,15 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chatroom.iml" filepath="$PROJECT_DIR$/.idea/modules/chatroom.iml" group="SocketDemo-1/chatroom" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chatroom/chatroom_main.iml" filepath="$PROJECT_DIR$/.idea/modules/chatroom/chatroom_main.iml" group="SocketDemo-1/chatroom" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/chatroom/chatroom_test.iml" filepath="$PROJECT_DIR$/.idea/modules/chatroom/chatroom_test.iml" group="SocketDemo-1/chatroom" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.socket.demo-SocketDemo-1_main.iml" filepath="$PROJECT_DIR$/.idea/modules/net.socket.demo-SocketDemo-1_main.iml" group="SocketDemo-1" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.socket.demo-SocketDemo-1_test.iml" filepath="$PROJECT_DIR$/.idea/modules/net.socket.demo-SocketDemo-1_test.iml" group="SocketDemo-1" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chatroom/net.socket.demo-chatroom_main.iml" filepath="$PROJECT_DIR$/.idea/modules/chatroom/net.socket.demo-chatroom_main.iml" group="SocketDemo-1/chatroom" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chatroom/net.socket.demo-chatroom_test.iml" filepath="$PROJECT_DIR$/.idea/modules/chatroom/net.socket.demo-chatroom_test.iml" group="SocketDemo-1/chatroom" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nio-chatroom.iml" filepath="$PROJECT_DIR$/.idea/modules/nio-chatroom.iml" group="SocketDemo-1/nio-chatroom" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nio-chatroom.main.iml" filepath="$PROJECT_DIR$/.idea/modules/nio-chatroom.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nio-chatroom.test.iml" filepath="$PROJECT_DIR$/.idea/modules/nio-chatroom.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nio-chatroom/nio-chatroom_main.iml" filepath="$PROJECT_DIR$/.idea/modules/nio-chatroom/nio-chatroom_main.iml" group="SocketDemo-1/nio-chatroom" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nio-chatroom/nio-chatroom_test.iml" filepath="$PROJECT_DIR$/.idea/modules/nio-chatroom/nio-chatroom_test.iml" group="SocketDemo-1/nio-chatroom" />
     </modules>
   </component>
 </project>
